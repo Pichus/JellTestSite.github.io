@@ -1,0 +1,32 @@
+@media screen and (max-width: 992px) {
+
+    .device{
+
+        display: none;
+
+    }
+
+    .main_content {
+
+        margin-top: -40px !important;
+
+    }
+    
+    .main_footer_content {
+
+        display: none;
+
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .about_us {
+
+        display: none;
+
+    }
+
+}

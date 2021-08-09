@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+section.standart {
+
+    padding: 50px 0;
+
+}
+
+.body{
+
+    background: #FEF5F5;
+
+}
+
+
+.jell_logo {
+
+    border-radius: 100px;
+
+}
+
+.jell_h1 h1 {
+
+    color: blueviolet !important;
+
+}
+
+.navbar {
+
+    opacity: .95;
+
+}
+
+.navbar-brand.fs-3 {
+
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.nav-item {
+
+    display: inline-block;
+    padding: 0px 7px;
+    
+}
+
+.header_menu {
+
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    transition: all .3s !important;
+
+}
+
+.header_menu li a::after {
+
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #111;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+
+}
+
+.header_menu li a:hover::after {
+
+    transform: scale(1);
+
+}
+
+.header_menu a:hover {
+
+    color: black !important;
+
+}
+
+.carousel {
+
+    width: 30% !important;
+
+}
+
+.carousel-item img{
+
+    border-radius: 20px !important;
+
+}
+
+.primary_btn_shadow {
+
+    border-radius: 300px;
+    filter: drop-shadow(0 0 3px #52F9FF);
+
+}
+
+.primary_btn_shadow:hover {
+
+
+    transition: box-shadow .25s ease,transform .25s ease;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+
+}
+
+.footer_section {
+
+    margin-top: 150px !important;
+
+}
+
+
+
+/* --------------------FADE_IN_UP ANIMATION------------------------------- */
+
+@media screen and (min-width: 992px) {
+
+    @keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fadeInUp {
+        from {
+            transform: translate3d(0,40px,0)
+        }
+
+        to {
+            transform: translate3d(0,0,0);
+            opacity: 1
+        }
+    }
+
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both
+    }
+
+    .animatedFadeInUp {
+        opacity: 0
+    }
+
+    .fadeInUp {
+        opacity: 0;
+        animation-name: fadeInUp;
+        -webkit-animation-name: fadeInUp;
+    }
+
+    @-webkit-keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        }
+        100% {
+        opacity: 1;
+        -webkit-transform: translateX(20px);
+        }
+    }
+    
+    @keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        transform: translateX(0);
+        }
+        100% {
+        opacity: 1;
+        transform: translateX(20px);
+        }
+    }
+    
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+    }
+
+}
+
+/* ------------------FADE_IN_UP ANIMATION------------------ */
